@@ -330,7 +330,10 @@ en:
       start: Start searching...
   landing:
     about: "%{href} is a simple front-end for your BigBlueButton open-source web conferencing server. You can create your own rooms to host sessions, or join others using a short and convenient link."
-    welcome: Welcome to BigBlueButton.
+    signup: Please, sign up with your official (lower case!) uni-hamburg.de or desy.de address (first_name.last_name@uni-hamburg.de, first_name.last_name@studium.uni-hamburg, physnet_id@physnet.uni-hamburg.de or similar).
+    needhelp_p: "If you need help, please email %{href} or call 040 42838-7878"
+    needhelp_m: "(Math users please use the request tracker %{href} of the math department)"
+    welcome: Welcome to BigBlueButton @PHYSnet.
     video: Watch our tutorial on using Greenlight
     upgrade: Show me how to upgrade to 2.0!
     version: We've released a new version of Greenlight, but your database isn't compatible.
