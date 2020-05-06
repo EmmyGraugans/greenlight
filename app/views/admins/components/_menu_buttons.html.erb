@@ -25,6 +25,9 @@
     <%= link_to admin_rooms_path, class: "list-group-item list-group-item-action dropdown-item #{"active" if action_name == "server_rooms"}" do %>
       <span class="icon nav-icon"><i class="fas fa-binoculars"></i></span><%= t("administrator.rooms.title") %>
     <% end %>
+    <%= link_to admin_running_path, class: "list-group-item list-group-item-action dropdown-item #{"active" if action_name == "running_rooms"}" do %>
+      <span class="icon nav-icon"><i class="fas fa-power-off"></i></span><%= t("administrator.running.title") %>
+    <% end %>
     <%= link_to admin_recordings_path, class: "list-group-item list-group-item-action dropdown-item #{"active" if action_name == "server_recordings"}" do %>
       <span class="icon nav-icon"><i class="fas fa-video"></i></span><%= t("administrator.recordings.title") %>
     <% end %>

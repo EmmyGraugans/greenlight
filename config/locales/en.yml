@@ -194,6 +194,8 @@ en:
         started: "Started: %{session}"
         status: Status
         view: View
+    running:
+      title: Running Rooms
     title: Organization Settings
     users:
       invite: Invite User

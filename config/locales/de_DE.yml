@@ -194,6 +194,8 @@ de_DE:
         started: "Gestartet: %{session}"
         status: Status
         view: Ansehen
+    running:
+      title: Aktive Räume
     title: Organisationseinstellungen
     users:
       invite: Nutzer einladen
