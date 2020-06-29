@@ -315,6 +315,8 @@ class RoomsController < ApplicationController
   # GET /:room_uid/room_settings
   def room_settings
     # Respond with JSON object of the room_settings
+    status = { running: room_running?(@room.bbb_id) }
+    settings = @room.settings_hash
     respond_to do |format|
       format.json { render body: @room.room_settings }
     end

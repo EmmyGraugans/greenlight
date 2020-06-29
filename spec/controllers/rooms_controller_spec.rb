@@ -209,7 +209,7 @@ describe RoomsController, type: :controller do
 
       get :room_settings, params: { room_uid: @owner.main_room }, format: :json
 
-      expect(JSON.parse(response.body)).to eql(json_room_settings)
+      expect(JSON.parse(response.body).to_json).to eql(json_room_settings)
     end
 
     it "should redirect to root if not logged in" do

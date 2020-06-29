@@ -226,6 +226,9 @@ function showCreateRoom(target) {
     $(this).attr('style',"display:none !important")
     if($(this).children().length > 0) { $(this).children().attr('style',"display:none !important") }
   })
+
+  runningSessionWarningVisibilty(false)
+
 }
 
 function showUpdateRoom(target) {
