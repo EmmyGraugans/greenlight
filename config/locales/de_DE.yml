@@ -574,6 +574,8 @@ de_DE:
     invitation_description: "Sie wurden zu %{name} über BigBlueButton zur Teilnahme eingeladen. Um beizutreten, klicken Sie auf den obigen Link und geben Sie Ihren Namen ein."
     invited: Sie wurden zur Teilnahme eingeladen
     recording_present: "Ich bin damit einverstanden, dass diese Sitzung aufgezeichnet wird. Die Aufzeichnung kann Sprach- und Videoaufnahmen von mir beinhalten. Bitte beachten Sie, dass die Aufnahme im Anschluss geteilt werden kann."
+    recording_present: Diese Sitzung wird aufgezeichnet. Das betrifft Stimme und Video von Ihrer Seite.
+    recording_disclaimer: Die Sitzung, die Sie gerade betreten, kann vom Veranstalter aufgezeichnet und ggf. Dritten zur Verfügung gestellt werden; dies wird deutlich sichtbar angezeigt durch einen roten Punkt oben in der Mitte. In den möglichen Veröffentlichungen der Aufzeichnung erscheinen nur Personen mit aktivierter Kamera oder Mikrofon. Bitte geben Sie unten Ihre Zustimmung.
     invite_participants: Teilnehmer einladen
     join: Teilnehmen
     last_session: "Letzte Konferenz am %{session}"
@@ -644,6 +646,8 @@ de_DE:
     with: "Registrieren mit %{provider}"
   terms:
     accept: "Ich akzeptiere die %{href}"
+    accept_recording: Ich akzeptiere eine mögliche Aufzeichnung dieser Sitzung.
+    error_recording: Bitte akzeptieren Sie, dass diese Sitzung möglicherweise aufgezeichnet werden kann.
     accept_existing: Ich akzeptiere die Nutzungsbedingungen
     title: Allgemeine Nutzungsbedingungen
   test_install: >

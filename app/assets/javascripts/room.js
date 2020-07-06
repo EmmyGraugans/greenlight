@@ -40,7 +40,9 @@ $(document).on('turbolinks:load', function(){
     }
   })
 
-  if (controller == "rooms" && action == "show" || controller == "admins" && action == "server_rooms"){
+  if (controller == "rooms" && action == "show"
+      || controller == "admins" && action == "server_rooms"
+      || controller == "admins" && action == "running_rooms"){
     // Display and update all fields related to creating a room in the createRoomModal
     $(".update-room").click(function(){
       showUpdateRoom(this)
@@ -226,9 +228,6 @@ function showCreateRoom(target) {
     $(this).attr('style',"display:none !important")
     if($(this).children().length > 0) { $(this).children().attr('style',"display:none !important") }
   })
-
-  runningSessionWarningVisibilty(false)
-
 }
 
 function showUpdateRoom(target) {
