@@ -577,7 +577,7 @@ en:
     invited: You have been invited to join
     recording_present: I acknowledge that this session is going to be recorded. This may include my voice and video if enabled.
     recording_present: The session is going to be recorded. This includes voice and video from your side.
-    recording_disclaimer: The session you are about to join can be recorded by moderators and made available to third parties by the owner of the room. This is clearly indicated by a red circle on top in the middle. Published recordings include only participants with activated voice or video. Please indicate below whether you consent to this.
+    recording_disclaimer: The session you are about to join can be recorded by moderators and the room owner can make these recordings available to third party viewers. A clearly visible red dot centered on top indicates recording in progress. Published recordings only include participants that activate voice or video. Please, indicate your consent below.
     invite_participants: Invite Participants
     join: Join
     last_session: Last session on %{session}
@@ -648,7 +648,7 @@ en:
     with: Sign up with %{provider}
   terms:
     accept: I accept the %{href}
-    accept_recording: I accept the possibility of this session being recorded.
+    accept_recording: I accept that this session may be recorded.
     error_recording: Please accept that this session might be recorded.
     accept_existing: I accept the terms and conditions
     title: Terms and Conditions
