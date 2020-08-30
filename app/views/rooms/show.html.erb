@@ -87,6 +87,11 @@
           <% end %>
         <% end %>
       </div>
+      <% if display_joiner_consent %>
+        <h4 class="w-100 text-right text-danger mt-4"><%= t("room.recording_possible") %></h4>
+      <% elsif @settings.get_value("Room Configuration Recording") != "disabled"  %>
+        <h4 class="w-100 text-right text-danger mt-4"><%= t("room.recording_impossible") %></h4>
+      <% end %>
     </div>
 
     <% if total_room_count(current_user) > 5 %>
