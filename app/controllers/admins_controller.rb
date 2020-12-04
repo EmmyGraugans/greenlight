@@ -101,8 +101,15 @@ class AdminsController < ApplicationController
     @order_column = params[:column] && params[:direction] != "none" ? params[:column] : "created_at"
     @order_direction = params[:direction] && params[:direction] != "none" ? params[:direction] : "DESC"
 
-    @running_room_bbb_ids = all_running_meetings[:meetings].pluck(:meetingID)
-    @running_room_info = all_running_meetings[:meetings].pluck(:meetingID, :participantCount, :listenerCount, :voiceParticipantCount, :videoCount)
+    begin
+      meetings = all_running_meetings[:meetings]
+    rescue BigBlueButton::BigBlueButtonException
+      flash[:alert] = I18n.t("administrator.rooms.timeout", server: I18n.t("bigbluebutton"))
+      meetings = []
+    end
+
+    @running_room_bbb_ids = meetings.pluck(:meetingID)
+    @running_room_info = meetings.pluck(:meetingID, :participantCount, :listenerCount, :voiceParticipantCount, :videoCount)
 
     @user_list = shared_user_list if shared_access_allowed
 
