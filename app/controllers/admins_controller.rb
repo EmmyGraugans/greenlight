@@ -108,10 +108,9 @@ class AdminsController < ApplicationController
       meetings = []
     end
 
+    @order_column = "created_at" if meetings.empty?
     @running_room_bbb_ids = meetings.pluck(:meetingID)
     @running_room_info = meetings.pluck(:meetingID, :participantCount, :listenerCount, :voiceParticipantCount, :videoCount)
-
-    @user_list = shared_user_list if shared_access_allowed
 
     @pagy, @rooms = pagy_array(server_rooms_list.where(:bbb_id => @running_room_bbb_ids))
   end
